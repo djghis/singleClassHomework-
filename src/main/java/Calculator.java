@@ -16,4 +16,8 @@ public class Calculator {
     public int multiply(int i, int i1) {
         return i * i1;
     }
+
+    public double divide(double v, double v1) {
+        return v / v1;
+    }
 }
