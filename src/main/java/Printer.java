@@ -15,6 +15,7 @@ public class Printer {
 
     public String print(int pages, int copies) {
         if (this.sheets >= pages * copies) {
+            return String.valueOf(this.sheets -= pages * copies);
             return String.valueOf(this.toner -= pages * copies);
         } else {
             return "Not enough paper";
