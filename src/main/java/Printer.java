@@ -9,4 +9,9 @@ public class Printer {
     public int hasSheets(){
         return this.sheets;
     }
+
+
+    public int print(int pages, int copies) {
+        return this.sheets -= pages * copies;
+    }
 }
